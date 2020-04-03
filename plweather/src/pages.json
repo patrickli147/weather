@@ -1,0 +1,52 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/more/index",
+			"style": {
+				"navigationBarTitleText": "更多"
+			}
+		},
+		{
+			"path": "pages/city/index",
+			"style": {
+				"navigationBarTitleText": "城市",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/weather/index",
+			"style": {
+				"navigationBarTitleText": "天气",
+				"enablePullDownRefresh": true
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#8a8a8a",
+		"selectedColor": "#000",
+		"backgroundColor": "#fff",
+		"position": "bottom",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/city/index",
+				"text": "城市",
+				"iconPath": "./static/icons/wea.png",
+				"selectedIconPath": "./static/icons/weaSelected.png"
+			},
+			{
+				"pagePath": "pages/more/index",
+				"text": "更多",
+				"iconPath": "./static/icons/menu.png",
+				"selectedIconPath": "./static/icons/menuSelected.png"
+			}
+		]
+	}
+}
